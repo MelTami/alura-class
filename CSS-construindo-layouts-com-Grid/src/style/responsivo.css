@@ -20,10 +20,17 @@
     }
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
     }
     .secao-vertical .cartao {
         background-color: transparent;
         padding: 0;
+    }
+    .cabecalho{
+        justify-self: center;
+    }
+    .secao-horizontal .cartao {
+        column-gap: .5rem;
     }
 }
 
@@ -61,5 +68,8 @@
     .navbar,
     .cabecalho__logo {
         display: none;
+    }
+    .menu-lateral{
+        width: 228px;
     }
 }
