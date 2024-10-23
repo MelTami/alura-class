@@ -1,0 +1,24 @@
+@use './variaveis';
+
+@mixin margem-central($width){
+  margin: 0 auto;
+  width: $width;
+}
+
+@mixin ff-fs-cl($f-family, $f-size, $f-color){
+  font-family: $f-family;
+  font-size: $f-size;
+  color: $f-color;
+}
+
+@mixin botao(){
+  padding: 24px;
+  background-color: variaveis.$cor-terciaria;
+  border-radius: 40px;
+  @include ff-fs-cl(variaveis.$ft-textos, 22px, white);
+  border: 0px;
+  font-weight: 500;
+  &:hover {
+    background-color: variaveis.$cor-secundaria;
+  }
+}
